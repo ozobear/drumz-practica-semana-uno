@@ -27,12 +27,27 @@ a:hover {
 
 .navbar img {
   max-height: 30px;
+  display: inline;
 }
 
-.navbar li a {
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar ul li {
+  float: left;
+}
+
+.navbar ul li a {
   display: block;
   color: white;
   padding: 14px 16px;
+  margin: 0;
+  bottom: 0;
   text-decoration: none;
 }
 
@@ -162,6 +177,8 @@ a:hover {
   color: #fff;
 }
 
+/* Footer */
+
 footer {
   padding-top: 20px;
   padding-bottom: 0;
@@ -186,4 +203,17 @@ footer {
 .social img {
   height: 40px;
   margin-top: 50px;
+}
+
+/* FAQ */
+
+.questions {
+  margin: auto;
+  padding-top: 30px;
+  width: 80%;
+}
+
+.questions h1 {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 25px;
 }
